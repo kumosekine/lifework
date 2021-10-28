@@ -1,24 +1,37 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## themes　テーブル
 
-Things you may want to cover:
+| Column   | Type       | Options                        |
+| ---------| -----------| ------------------------------ |
+| title    | string     | null: false                    |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :work_ends
+- has_many :work_does
 
-* Configuration
+## work_ends テーブル
 
-* Database creation
+| Column  | Type       | Options                        |
+| ------- | -----------| ------------------------------ |
+| content | string     | null: false                    |
+| theme   | references | null: false, foreign_key: true |
 
-* Database initialization
+### Association
 
-* How to run the test suite
+- belongs_to :theme
+- has_one :work_do
 
-* Services (job queues, cache servers, search engines, etc.)
+## work_does テーブル
 
-* Deployment instructions
+| Column   | Type       | Options                        |
+| -------- | ---------- | ------------------------------ |
+| to_do    | string     | null:false                     |
+| theme    | references | null: false, foreign_key: true |
+| work_end | references | null: false, foreign_key: true |
 
-* ...
+### Association
+
+- belongs_to :theme
+- belongs_to :work_ends
