@@ -1,6 +1,12 @@
 <div class="theme">
+<%= form_with url:"/themes", method: :post, local: true do |form| %>
+  <%= form.text_field :title %>
+  <%= form.submit '追加する' %>
+<% end %>
+
+
 <h2>現在のライフワーク</h2>
  <% @themes.each do |theme| %>
-  <p><%= theme.title %></p>
+  <p><%= theme.title %><%= link_to '削除', "/themes/#{theme.id}", method: :delete %></p>
   <% end %>
 </div>
