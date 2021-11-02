@@ -10,12 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_30_144632) do
+ActiveRecord::Schema.define(version: 2021_11_02_052750) do
 
   create_table "themes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "work_dos", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "theme_id", null: false
+    t.string "to_do", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["theme_id"], name: "index_work_dos_on_theme_id"
   end
 
   create_table "work_ends", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -26,5 +34,6 @@ ActiveRecord::Schema.define(version: 2021_10_30_144632) do
     t.index ["theme_id"], name: "index_work_ends_on_theme_id"
   end
 
+  add_foreign_key "work_dos", "themes"
   add_foreign_key "work_ends", "themes"
 end

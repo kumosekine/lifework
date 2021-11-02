@@ -14,7 +14,9 @@ class ThemesController < ApplicationController
   def show
     @theme = Theme.find(params[:id])
     @work_end = WorkEnd.new
-    @work_ends = @theme.work_ends 
+    @work_ends = @theme.work_ends
+    @work_do = WorkDo.new
+    @work_dos = @theme.work_dos 
    end
 
   def destroy

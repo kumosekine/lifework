@@ -9,7 +9,7 @@
 ### Association
 
 - has_many :work_ends
-- has_many :work_does
+- has_many :work_dos
 
 ## work_ends テーブル
 
@@ -23,7 +23,7 @@
 - belongs_to :theme
 - has_one :work_do
 
-## work_does テーブル
+## work_dos テーブル
 
 | Column   | Type       | Options                        |
 | -------- | ---------- | ------------------------------ |
