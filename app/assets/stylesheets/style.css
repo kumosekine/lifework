@@ -15,13 +15,36 @@ body {
 header {
   font-family: 游ゴシック/游ゴシック体;
   border-bottom: 1px solid black;
+  
   }
 
 body {
   background-color:papayawhip;
+  
 }
 
 .theme {
-  font-size: 20px;
+  font-size: 25px;
   margin-left: 10px;
+}
+
+.title2 {
+   display: flex;
+}
+
+.delete {
+  font-size: 12px;
+  margin: 12px 0 0 10px;
+}
+
+.show {
+  margin: 7px 5px 0 7px;
+}
+
+.end {
+  flex-direction: column;
+}
+
+a { text-decoration: none;
+  color: #666
 }

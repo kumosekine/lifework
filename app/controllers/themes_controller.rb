@@ -4,7 +4,6 @@ class ThemesController < ApplicationController
   end
 
   def new
-   # @theme = Theme.new
   end
 
   def create
@@ -12,16 +11,16 @@ class ThemesController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+    @theme = Theme.find(params[:id])
+    @work_end = WorkEnd.new
+    @work_ends = @theme.work_ends 
+   end
+
   def destroy
     theme = Theme.find(params[:id])
     theme.destroy
     redirect_to root_path
   end
-
-  private
-
-#def theme_params
-  #  params.require(:theme).permit(:title)
- # end
-
 end
+

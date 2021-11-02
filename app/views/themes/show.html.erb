@@ -1,0 +1,14 @@
+<div class="show">
+<h2><%= @theme.title %></h2>
+<h3>できた/覚えた/終えた事</h3>
+<div class="work">
+  <%= form_with(model: [@theme, @work_end], local: true) do |form| %>
+    <%= form.text_field :content %>
+    <%= form.submit "追加" %>
+    <% end %>
+</div>
+<div class="end">
+ <% @work_ends.each do |work_end| %>
+  <%= work_end.content %><%= link_to '削除', "/themes/#{@theme.id}/work_ends/#{work_end.id}", method: :delete %>
+  <% end %>
+</div>
