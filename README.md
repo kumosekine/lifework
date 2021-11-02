@@ -21,7 +21,6 @@
 ### Association
 
 - belongs_to :theme
-- has_one :work_do
 
 ## work_dos テーブル
 
@@ -34,4 +33,3 @@
 ### Association
 
 - belongs_to :theme
-- belongs_to :work_ends
