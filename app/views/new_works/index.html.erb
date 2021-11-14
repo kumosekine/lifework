@@ -1,0 +1,25 @@
+ <h3>ライフワーク・やりたい事・今までやって来た事から新しいライフワークを生み出そう！</h3>
+ <div class="new_work">
+ <div class="new_theme">
+ <% @themes.each do |theme| %>
+  <%= theme.title %>
+  <% end %>
+  </div>
+  <div class="new_do">
+ <% @work_dos.each do |work_do| %>
+  <%= work_do.content %>
+  <% end %>
+  </div>
+
+  <div class="nwe_end">
+   <% @work_ends.each do |work_end| %>
+  <%= work_end.content %>
+  <% end %>
+  </div>
+  </div>
+
+  <div class="theme">
+<%= form_with url:"/themes", method: :post, local: true, id: "form" do |form| %>
+  <%= form.text_field :title, id: "title" %>
+  <%= form.submit '追加する' , id: "submit" %>
+<% end %>

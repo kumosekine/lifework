@@ -1,16 +1,21 @@
 <div class="theme">
-<%= form_with url:"/themes", method: :post, local: true do |form| %>
-  <%= form.text_field :title %>
-  <%= form.submit '追加する' %>
+<h4>ライフワークを追加して下さい</h4>
+<%= form_with url:"/themes", method: :post, local: true, id: "form" do |form| %>
+  <%= form.text_field :title, id: "title" %>
+  <%= form.submit '追加する' , id: "submit" %>
 <% end %>
 
 <div class="title">
 <h2>現在のライフワーク</h2>
+
 </div>
  <% @themes.each do |theme| %>
  <div class="title2">
  <%= link_to theme_path(theme.id) do %>
-  <%= theme.title %><%end%> <div class="delete"><%= link_to '削除', "/themes/#{theme.id}", method: :delete %></div>
+  ・<%= theme.title %><%end%> <div class="delete"><%= link_to '削除', "/themes/#{theme.id}", method: :delete %></div>
   </div>
   <% end %>
+</div>
+<div class="new">
+<%= link_to new_works_path do %><h2>ニューライフワークを考えるのコーナー</h2><% end %>
 </div>

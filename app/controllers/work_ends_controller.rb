@@ -11,6 +11,7 @@ class WorkEndsController < ApplicationController
   end
 
   private
+
   def work_end_params
     params.require(:work_end).permit(:content).merge(theme_id: params[:theme_id])
   end

@@ -26,7 +26,7 @@
 
 | Column   | Type       | Options                        |
 | -------- | ---------- | ------------------------------ |
-| to_do    | string     | null:false                     |
+| content    | string     | null:false                     |
 | theme    | references | null: false, foreign_key: true |
 | work_end | references | null: false, foreign_key: true |
 

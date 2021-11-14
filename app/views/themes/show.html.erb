@@ -9,7 +9,8 @@
 
 <div class="end">
  <% @work_dos.each do |work_do| %>
-  <%= work_do.to_do %><%= link_to '削除', "/themes/#{@theme.id}/work_dos/#{work_do.id}", method: :delete %>
+  <%= work_do.content %>
+  <%= link_to '削除', "/themes/#{@theme.id}/work_dos/#{work_do.id}", method: :delete %>
   <% end %>
 </div>
 <div>

@@ -16,8 +16,8 @@ class ThemesController < ApplicationController
     @work_end = WorkEnd.new
     @work_ends = @theme.work_ends
     @work_do = WorkDo.new
-    @work_dos = @theme.work_dos 
-   end
+    @work_dos = @theme.work_dos
+  end
 
   def destroy
     theme = Theme.find(params[:id])
@@ -25,4 +25,3 @@ class ThemesController < ApplicationController
     redirect_to root_path
   end
 end
-
