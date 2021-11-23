@@ -1,0 +1,11 @@
+ <div class="routines">
+ <h3>ルーティンワークを登録しよう</h3>
+ <div class="routines-new">
+   <%= form_with model: @routine, url:routines_path, local: true do |form| %>
+   <%= form.text_field :content, placeholder: "タイトル" ,class:"routines-title" %> 
+   <%= form.collection_select(:calendar_id, Calendar.all, :id, :name, {}, {class:"calendar-select"} ) %>
+   <%= form.text_field :how_many, placeholder: "回数" ,class:"how-many"%>回
+   <%= form.submit "登録" ,class:"routine-btn"%>
+   <% end %>
+  </div>
+  </div>

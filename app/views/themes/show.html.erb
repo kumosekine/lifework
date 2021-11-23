@@ -1,29 +1,34 @@
 <div class="show">
-<h2><%= @theme.title %></h2>
-<h3>やりたい事/みたい聞きたい事/覚えたい事</h3>
-<div class="work to-do">
-  <%= form_with(model: [@theme, @work_do], local: true) do |form| %>
-    <%= form.text_field :to_do %>
-    <%= form.submit "追加" %>
-    <% end %>
-
-<div class="end">
- <% @work_dos.each do |work_do| %>
-  <%= work_do.content %>
-  <%= link_to '削除', "/themes/#{@theme.id}/work_dos/#{work_do.id}", method: :delete %>
-  <% end %>
-</div>
-<div>
-
-<h3>できた/覚えた/終えた事</h3>
-<div class="work">
-  <%= form_with(model: [@theme, @work_end], local: true) do |form| %>
+  <h2><%= @theme.title %></h2>
+  
+  <div class="work to-do">
+  <h3>やりたい事/みたい聞きたい事/覚えたい事</h3>
+    <%= form_with(model: [@theme, @work_do], local: true) do |form| %>
     <%= form.text_field :content %>
     <%= form.submit "追加" %>
     <% end %>
-</div>
-<div class="end">
- <% @work_ends.each do |work_end| %>
-  <%= work_end.content %><%= link_to '削除', "/themes/#{@theme.id}/work_ends/#{work_end.id}", method: :delete %>
-  <% end %>
+
+    <div class="work_do">
+      <% @work_dos.each do |work_do| %>
+      <%= work_do.content %>
+      <%= link_to '削除', "/themes/#{@theme.id}/work_dos/#{work_do.id}", method: :delete %>
+      <% end %>
+    </div>
+  </div>
+
+
+  <div class="work">
+   <h3>できた/覚えた/終えた事</h3>
+   <%= form_with(model: [@theme, @work_end], local: true) do |form| %>
+    <%= form.text_field :content %>
+    <%= form.submit "追加" %>
+    <% end %>
+
+    <div class="end">
+     <% @work_ends.each do |work_end| %>
+     <%= work_end.content %><%= link_to '削除', "/themes/#{@theme.id}/work_ends/#{work_end.id}", method: :delete %>
+     <% end %>
+    </div>
+ </div>
+
 </div>
