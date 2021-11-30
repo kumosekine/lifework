@@ -48,20 +48,20 @@
 *ルーティンワーク管理機能  
 
 ### 機能の画像やGif動画
-■トップページ  
+■トップページ
 [![Image from Gyazo](https://i.gyazo.com/cd45d9977bda491a65883050f9af154b.png)](https://gyazo.com/cd45d9977bda491a65883050f9af154b)
 
 
-■ライフワーク追加機能  
+■ライフワーク追加機能
 [![Image from Gyazo](https://i.gyazo.com/119d8ebefadc6abb72d71181d642820b.gif)](https://gyazo.com/119d8ebefadc6abb72d71181d642820b)
 
-■ライフワーク削除機能  
+■ライフワーク削除機能
 [![Image from Gyazo](https://i.gyazo.com/3c3802e5bea7396dab0686b243c0c421.gif)](https://gyazo.com/3c3802e5bea7396dab0686b243c0c421)
 
 ■詳細ページ
 [![Image from Gyazo](https://i.gyazo.com/2d3ca9ebe28b223ee8fe63a6cedf193b.gif)](https://gyazo.com/2d3ca9ebe28b223ee8fe63a6cedf193b)
 
-■詳細内の追加機能  
+■詳細内の追加機能
 [![Image from Gyazo](https://i.gyazo.com/cc571117255a6c74f8a4cbd8bb175d57.gif)](https://gyazo.com/cc571117255a6c74f8a4cbd8bb175d57)
 
 ■詳細内の削除機能
