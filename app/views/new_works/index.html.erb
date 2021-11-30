@@ -1,4 +1,4 @@
- <h3>ライフワーク・やりたい事・今までやって来た事から新しいライフワークを生み出そう！</h3>
+ <h3>登録した全てを一覧化</h3>
  <div class="new_work">
  <div class="new_theme">
  <% @themes.each do |theme| %>
@@ -18,7 +18,10 @@
   </div>
   </div>
 
+
+
   <div class="theme">
+  <h4>■以上を踏まえて新しいワークライフを作ってみる？</h4>
 <%= form_with url:"/themes", method: :post, local: true, id: "form" do |form| %>
   <%= form.text_field :title, id: "title" %>
   <%= form.submit '追加する' , id: "submit" %>

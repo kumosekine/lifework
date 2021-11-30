@@ -1,8 +1,8 @@
 <div class="show">
   <h2><%= @theme.title %></h2>
-  
-  <div class="work to-do">
-  <h3>やりたい事/みたい聞きたい事/覚えたい事</h3>
+
+  <div class="to-do">
+   <h3>やりたい事/見たい聞きたい読みたい事/覚えたい事</h3>
     <%= form_with(model: [@theme, @work_do], local: true) do |form| %>
     <%= form.text_field :content %>
     <%= form.submit "追加" %>
@@ -17,8 +17,8 @@
   </div>
 
 
-  <div class="work">
-   <h3>できた/覚えた/終えた事</h3>
+  <div class="to-do">
+   <h3>できた/見た聞いた読んだ事/覚えた事</h3>
    <%= form_with(model: [@theme, @work_end], local: true) do |form| %>
     <%= form.text_field :content %>
     <%= form.submit "追加" %>

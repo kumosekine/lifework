@@ -1,4 +1,9 @@
 class WorkDosController < ApplicationController
+
+  def new
+    @work_do = WorkDo.new
+  end
+
   def create
     work_do = WorkDo.create(work_do_params)
     redirect_to "/themes/#{work_do.theme_id}"
