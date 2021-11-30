@@ -53,6 +53,7 @@
 
 
 ■ライフワーク追加機能
+
 [![Image from Gyazo](https://i.gyazo.com/119d8ebefadc6abb72d71181d642820b.gif)](https://gyazo.com/119d8ebefadc6abb72d71181d642820b)
 
 ■ライフワーク削除機能
@@ -65,6 +66,7 @@
 [![Image from Gyazo](https://i.gyazo.com/cc571117255a6c74f8a4cbd8bb175d57.gif)](https://gyazo.com/cc571117255a6c74f8a4cbd8bb175d57)
 
 ■詳細内の削除機能
+
 [![Image from Gyazo](https://i.gyazo.com/8eadddf602276eef54bbe3b7afda5488.gif)](https://gyazo.com/8eadddf602276eef54bbe3b7afda5488)
 
 ■全ての一覧表示機能
