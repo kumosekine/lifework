@@ -7,6 +7,8 @@
 
 ### URL https://lifework-36032.herokuapp.com/
 
+ID:adminkumo PASS:2355
+
 ---------------------------------------------------------
 ## 利用方法
 
