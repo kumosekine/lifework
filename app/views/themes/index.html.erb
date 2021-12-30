@@ -26,7 +26,7 @@
 <div class='routne-title'>
 <% @routines.each do |routine| %>
 <div class='routine-index'>
-・<%= routine.content %>  <%= routine.calendar.name %>  １回あたり<%= routine.how_many %>
+・<%= routine.content %>  <%= routine.calendar.name %>  １回あたり<%= routine.how_many %><div class="delete-r"><%= link_to '削除', " /routines/#{routine.id}", method: :delete %></div>
 </div>
 <% end %>
 </div>

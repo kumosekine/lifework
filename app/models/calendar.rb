@@ -1,5 +1,4 @@
 class Calendar < ActiveHash::Base
-
   self.data = [
     { id: 1, name: '---' },
     { id: 2, name: '月１回' },
@@ -10,10 +9,9 @@ class Calendar < ActiveHash::Base
     { id: 7, name: '週３回' },
     { id: 8, name: '週４回' },
     { id: 9, name: '週５回' },
-    { id: 10, name: '毎日' },
+    { id: 10, name: '毎日' }
   ]
 
   include ActiveHash::Associations
   has_many :routine
-
 end

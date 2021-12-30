@@ -5,5 +5,5 @@ Rails.application.routes.draw do
     resources :work_ends, only: [:create, :destroy]
   end
   resources :new_works, only: [:index, :new, :create]
-  resources :routines, only: [:new, :create]
+  resources :routines, only: [:new, :create, :destroy]
 end

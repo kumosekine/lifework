@@ -1,5 +1,4 @@
 class WorkDosController < ApplicationController
-
   def new
     @work_do = WorkDo.new
   end

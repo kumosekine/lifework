@@ -92,5 +92,10 @@ a { text-decoration: none;
 }
 
 .routine-index{
-  display: block;
+  display: flex;
+}
+
+.delete-r {
+  font-size: 12px;
+  margin: 6px 0 0 8px;
 }
